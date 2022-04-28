@@ -32,8 +32,7 @@ def run_sonar_query(jwt):
   encoded_url = URL+"/sonar/query?query="+encoded_sonarq+"&get_results_and_count=true"
   r = requests.get(encoded_url, headers=headers)
 
-  # This next bit is for demonstration purposes only but shows both the unsafe and safe URLs as well as the res
-ult
+  # This next bit is for demonstration purposes only but shows both the unsafe and safe URLs as well as the result
   print(r.text)
   print("\n\n")
   print("This is the unencoded URL")
